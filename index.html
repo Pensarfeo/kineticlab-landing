@@ -19,17 +19,6 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="white">
     <!-- Theme mode-->
-    <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== undefined && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
-      }
-      
-      
-    </script>
     <!-- Page loading styles-->
     <style>
       .page-loading {
@@ -140,7 +129,8 @@
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
     <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="assets/css/kineticLab.css">
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
   </head>
   <!-- Body-->
@@ -169,31 +159,17 @@
             </svg>
           </span>Kinetic Lab</a>
             <a class="btn btn-primary btn-sm rounded-pill fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
-              <i class="ai-cart fs-xl me-2 ms-n1">
-
-            </i>Buy now</a>
-            <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon">
-
-            </span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-              <div class="d-sm-none p-3 mt-n3">
-                <a class="btn btn-primary w-100  mb-1" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
-                <i class="ai-cart fs-xl me-2 ms-n1">
-
-              </i>Buy now</a>
-              </div>
-            </nav>
+              Log In
+            </a>
           </div>
         </header>
       </div>
       <!-- Page content-->
       <!-- Hero-->
-      <section class="bg-dark dark-mode d-flex position-relative overflow-hidden py-5">
+      <section class="bg-main dark-mode d-flex position-relative overflow-hidden py-5 ">
         <div class="container d-flex flex-column justify-content-center position-relative zindex-2 pt-sm-3 pt-md-4 pt-xl-5 pb-1 pb-sm-3 pb-lg-4 pb-xl-5">
           <div class="row flex-lg-nowrap align-items-center pb-5 pt-2 pt-lg-4 pt-xl-0 mt-lg-4 mt-xl-0" style="gap: 26px">
-            <div class="col-lg-7 order-lg-2 ms-lg-4 mb-2 mb-lg-0" style="aspect-ratio: 1.675925925925926; box-sizing: content-box">
+            <div class="col-lg-7 order-lg-2 main-video" style="aspect-ratio: 1.675925925925926; box-sizing: content-box">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/3bBPfM2v938" style="width:100%; height: 100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
             </div>
@@ -216,15 +192,14 @@
               </ul>
               <div class="d-flex justify-content-center justify-content-lg-start pt-4 pt-xl-5">
                 <div class="text-center">
-                  <a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto" href="#">Start free 14-day trial</a>
-                  <p class="fs-sm pt-2 mt-sm-1 mb-0">100% free to get started!</p>
+                  <a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto" href="#">Start analyzing videos now!</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="overflow-hidden pt-5 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5">
+      <section class="overflow-hidden pt-5 bg-secondary dark-mode" style="padding-bottom: 64px">
         <div class="container pt-2 pt-sm-4 pt-lg-5">
           <h2 class="h1 text-center pb-3 mb-3 mb-lg-4">How does it work?</h2>
           <!-- Step-->
@@ -234,7 +209,7 @@
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
               <div class="pe-md-4 pe-lg-0">
-                <span class="badge fs-sm bg-faded-primary text-primary mb-3 mb-lg-4">Step 01</span>
+                <span class="badge fs-sm step-badge text-primary mb-3 mb-lg-4">Step 01</span>
                 <h3 class="h2 mb-3 mb-lg-4">Upload and record, or share</h3>
                 <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Upload your own video, record from your webcam or let your athletes send you their videos</p>
                 <a class="btn btn-outline-primary rounded-pill" href="https://mykineticlab.com">Get started</a>
@@ -335,7 +310,7 @@
       </section>
 
       <!-- Benefits-->
-      <section class="container pt-5 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5">
+      <section class="container pt-5 bg-tertiary dark-mode" style="margin: 0; width: 100%; max-width: 100%; padding-bottom: 64px;">
         <h2 class="h1 text-center pt-3 pt-sm-4 pt-lg-5 pb-3 mb-3 mb-lg-4">Our benefits</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <!-- Item-->
@@ -350,7 +325,7 @@
                       </path>
                     </svg>
                     <h3>Faster Analysis</h3>
-                    <p class="card-text">Around users and partners can count on 24/7 technical assistance, as well as the help of the technical analytics department and teams of specialized experts.</p>
+                    <p class="card-text">Don't waste any time drawing angles or painfully going through frames. Let our AI take care of it and find movement insights faster.</p>
                   </div>
                 </div>
                 <div class="card-flip-back bg-primary rounded-5 py-2 py-lg-4 px-0">
@@ -360,8 +335,8 @@
 
                       </path>
                     </svg>
-                    <div class="h3 display-4 text-white pb-1 mb-2">24/7</div>
-                    <p class="card-text text-white opacity-70">Around users and partners can count on 24/7 technical assistance, as well as the help of the technical analytics department and teams of specialized experts.</p>
+                    <div class="h3 display-6 text-white pb-1 mb-2">Faster Analysis</div>
+                    <p class="card-text text-white opacity-70">Don't waste any time drawing angles or painfully going through frames. Let our AI take care of it and find movement insights faster.</p>
                   </div>
                 </div>
               </div>
@@ -385,7 +360,7 @@
                       </path>
                     </svg>
                     <h3>More clear feedback</h3>
-                    <p class="card-text">You can easily identify interdependencies between different indicators, identify tendencies and prevent potential difficulties and problems.</p>
+                    <p class="card-text">Make annotations that are visible and measurable, let your athletes explore and understand their movement like never before</p>
                   </div>
                 </div>
                 <div class="card-flip-back bg-danger rounded-5 py-2 py-lg-4 px-0">
@@ -401,8 +376,8 @@
 
                       </path>
                     </svg>
-                    <div class="h3 display-4 text-white pb-1 mb-2">136</div>
-                    <p class="card-text text-white opacity-70">You can easily identify interdependencies between different indicators, identify tendencies and prevent potential difficulties and problems.</p>
+                    <div class="h3 display-6 text-white pb-1 mb-2">More clear feedback</div>
+                    <p class="card-text text-white opacity-70">Make annotations that are visible and measurable, let your athletes explore and understand their movement like never before</p>
                   </div>
                 </div>
               </div>
@@ -432,7 +407,7 @@
                       </path>
                     </svg>
                     <h3>Share immediately</h3>
-                    <p class="card-text">Thanks to our platform, developed using advanced data management methods, data quality reaches 100%, which is 20% better than other platforms.</p>
+                    <p class="card-text">Let your athletes share their videos with you and share your analysis with any app</p>
                   </div>
                 </div>
                 <div class="card-flip-back bg-info rounded-5 py-2 py-lg-4 px-0">
@@ -454,7 +429,7 @@
 
                       </path>
                     </svg>
-                    <div class="h3 display-4 text-white pb-1 mb-2">100%</div>
+                    <div class="h3 display-6 text-white pb-1 mb-2">Share immediately</div>
                     <p class="card-text text-white opacity-70">Thanks to our platform, developed using advanced data management methods, data quality reaches 100%, which is 20% better than other platforms.</p>
                   </div>
                 </div>
@@ -478,9 +453,9 @@
                   </path>
                 </svg>
               </span>
-                <span class="text-light">Around</span>
+                <span class="text-light">KineticLab</span>
               </a>
-            <p class="fs-sm pb-2 pb-md-3 mb-3">Tellus non diam morbi quam vel venenatis proin sed. Dolor elementum nunc dictum interdum amet arcu aenean eu integer</p>
+            <p class="fs-sm pb-2 pb-md-3 mb-3">Rich out of us!</p>
             <div class="d-flex">
               <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" href="#">
               <i class="ai-facebook">
