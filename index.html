@@ -151,13 +151,27 @@
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
         <header class="navbar navbar-expand-lg fixed-top">
           <div class="container">
-            <a class="navbar-brand pe-sm-3" href="index.html">
             <span class="text-primary flex-shrink-0 me-2">
               <img src="assets/logo_white_full.svg">
             </span>
+
+
             <a class="btn btn-primary btn-sm rounded-pill fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://www.mykineticlab.com" target="_blank" rel="noopener">
               Log In
             </a>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px; margin-left: auto; margin-right: 16px !important;">
+                <li class="nav-item dropdown">
+                  <button class="btn btn-primary btn-sm dropdown-toggle active" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">English</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">English</a></li>
+                    <li><a class="dropdown-item" href="it.html">Italiano</a></li>
+                  </ul>
+                </li>
+
+                <!-- User signed in state. Account dropdown on screens > 576px-->
+              </ul>
+            </nav>
           </div>
         </header>
       </div>
